@@ -1,0 +1,381 @@
+.mobile{
+    display: none;
+}
+.slick_caro_cus {
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+.slick_caro_cus::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-radial-gradient(50% 50%, circle closest-side, #af52ed 0%, #8830df 100%);
+    opacity: 0.95;
+}
+.carousel-caption{
+  z-index: 999;
+}
+
+.content{
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    width: 83%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    color: #FFFFFF;
+}
+.content-text{
+   width: 50%;
+   padding-right: 10px;
+   
+}
+.content-rotating{
+   width: 50%;
+   padding-left: 20px;
+   position: relative;
+   top: -50px;
+}
+.content-left-h{
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 69px;
+    letter-spacing: -0.4px;
+    word-spacing: 0px;
+    text-shadow: -7px 4px 5px rgba(0,0,0,0.3);
+}
+
+/* carousel */
+
+.carousel-control-prev, .carousel-control-next, .carousel-indicators{
+    display: none !important;
+}
+
+
+ /* CONTENT AREA CSS */
+ 
+ .content-area {
+     z-index: 1;
+ }
+ 
+ .single-content-list span {
+     font-size: 16px;
+ }
+ 
+ /*Profile Circle Wrapper*/
+ .profile-circle-wrapper {
+     position: relative;
+     height: 397px;
+     width: 517px;
+     margin: auto;
+     pointer-events: fill;
+     cursor: pointer;
+     -webkit-transform: perspective(100px), translate3d(0, 0, 0);
+     transform: perspective(1000px);
+ }
+ 
+ .folder-img {
+     position: relative;
+     top: 210px;
+     left: 25px;
+     z-index: 1;
+ }
+ 
+ .profile-inner {
+     position: absolute;
+     height: 397px;
+     width: 517px;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     border-radius: 50%;
+     z-index: 2;
+     -webkit-transition: 3s all;
+     transition: 3s all;
+ }
+ 
+ .profile-circle {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     border: 3px solid #ededed;
+     border-radius: 50%;
+     margin: 25px auto 0;
+ }
+ 
+ .circle-lg {
+     height: 465px;
+     width: 465px;
+ }
+ 
+ .circle-md {
+     height: 335px;
+     width: 335px;
+     margin-top: 85px;
+ }
+ 
+ .circle-sm {
+     height: 220px;
+     width: 220px;
+     margin-top: 145px;
+ }
+ 
+ .profile-icon {
+     position: absolute;
+     display: block;
+     height: 55px;
+     width: 55px;
+     margin: 0 auto;
+     -webkit-transition: 1s all;
+     transition: 1s all;
+ }
+ 
+ .profile-icon img {
+     -webkit-transform: rotate(-90deg);
+     display: block;
+ }
+ 
+ .icon-1 {
+     top: 40px;
+     left: 35px;
+     -webkit-transform-origin: 350% 182px;
+     transform-origin: 350% 182px;
+ }
+ 
+ .icon-2 {
+     top: 40px;
+     left: 370px;
+     -webkit-transform-origin: -135px 185px;
+     transform-origin: -135px 185px;
+ }
+ 
+ .icon-3 {
+     top: 210px;
+     left: 425px;
+     -webkit-transform-origin: -355% 12px;
+     transform-origin: -355% 12px;
+ }
+ 
+ .icon-4 {
+     top: 422px;
+     left: 140px;
+     -webkit-transform-origin: 160% -191px;
+     transform-origin: 160% -191px;
+ }
+ 
+ .icon-5 {
+     top: -28px;
+     left: 130px;
+     -webkit-transform-origin: 50% 193px;
+     transform-origin: 50% 193px;
+ }
+ 
+ .icon-6 {
+     top: 65px;
+     left: -15px;
+     -webkit-transform-origin: 328% 100px;
+     transform-origin: 328% 100px;
+ }
+ 
+ .icon-7 {
+     top: 200px;
+     left: -20px;
+     -webkit-transform-origin: 328% -35px;
+     transform-origin: 328% -35px;
+ }
+ 
+ .icon-8 {
+     top: -15px;
+     left: 120px;
+     -webkit-transform-origin: -28% 117px;
+     transform-origin: -28% 117px;
+ }
+ 
+ .icon-9 {
+     top: 175px;
+     left: 80px;
+     -webkit-transform-origin: 46% -68px;
+     transform-origin: 46% -68px;
+ }
+ 
+ .icon-8,
+ .icon-9 {
+     height: 65px;
+     width: 65px;
+ }
+ 
+ /*Circle SM Animation*/
+ .circle-animation .icon-3-img,
+ .circle-animation .icon-4-img,
+ .circle-animation .icon-2-img,
+ .circle-animation .icon-1-img {
+     -webkit-animation: rotateCircle 80s 3.01s infinite linear;
+     animation: rotateCircle 80s 3.01s infinite linear backwards;
+     -webkit-animation-direction: forwards;
+     animation-direction: forwards;
+ }
+ 
+ .circle-animation .icon-1,
+ .circle-animation .icon-2,
+ .circle-animation .icon-3,
+ .circle-animation .icon-4 {
+     -webkit-animation: rotateCircle 80s 3s infinite linear;
+     animation: rotateCircle 80s 3s infinite linear;
+     -webkit-animation-direction: reverse;
+     animation-direction: reverse;
+ }
+ 
+ /*Circle MD Animation*/
+ .circle-animation .icon-5-img,
+ .circle-animation .icon-6-img,
+ .circle-animation .icon-7-img {
+     -webkit-animation: rotateCircle 90s 1.01s infinite linear;
+     animation: rotateCircle 90s 1.01s infinite linear;
+     -webkit-animation-direction: reverse;
+     animation-direction: reverse;
+ 
+ }
+ 
+ .circle-animation .icon-5,
+ .circle-animation .icon-6,
+ .circle-animation .icon-7 {
+     -webkit-animation: rotateCircle 90s 1s infinite linear;
+     animation: rotateCircle 90s 1s infinite linear;
+ }
+ 
+ .circle-animation .icon-8,
+ .circle-animation .icon-9 {
+     -webkit-animation: rotateCircle 35s 2s infinite linear;
+     animation: rotateCircle 35s 2s infinite linear;
+     -webkit-animation-direction: reverse;
+     animation-direction: reverse;
+ }
+ 
+ /*Circle LG Animation*/
+ .circle-animation .icon-8-img,
+ .circle-animation .icon-9-img {
+     -webkit-animation: rotateCircle 35s 2.01s infinite linear;
+     animation: rotateCircle 35s 2.01s infinite linear;
+     -webkit-animation-direction: forwards;
+     animation-direction: forwards;
+ }
+ 
+ @-webkit-keyframes rotateCircle {
+     from {
+         -webkit-transform: rotate(0deg);
+     }
+ 
+     to {
+         -webkit-transform: rotate(360deg);
+     }
+ }
+ 
+ @keyframes rotateCircle {
+     from {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
+ 
+     to {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+     }
+ }
+ 
+ .profile-icon {
+     display: none;
+ }
+
+
+ /* rotating animation media query */
+ 
+@media only screen and (max-width: 1012px) {
+    .content-left-h {
+        font-size: 49px;
+        line-height: 55px;
+    }
+
+}
+
+ @media only screen and (max-width: 992px) {
+    .slick_caro_cus {
+        height: 440px;
+    }
+   .desktop{
+    display: none;
+   }
+   .mobile{
+    display: block;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   .content-text{
+    width: 100%;
+    padding-right: 0px;
+    
+ }
+  .content{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .slick_caro_cus .carousel {
+        height: 350px;
+    }
+    .content-left-h {
+        font-size: 32px;
+        line-height: 45px;
+      
+    }
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 24px;
+    }
+    .content-left-h {
+        font-size: 32px;
+        line-height: 45px;
+      
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+   
+    .content-left-h {
+        font-size: 25px;
+        line-height: 28px;
+      
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+   
+}

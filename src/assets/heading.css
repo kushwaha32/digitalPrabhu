@@ -1,0 +1,17 @@
+.service-heading {
+    text-align: center;
+    margin: 150px 0 80px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.service-heading::after {
+    content: "";
+    width: 337px;
+    height: 1.5px;
+    background: linear-gradient(to right, #fff 0%, #333 54%, #fff 100%);
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+}

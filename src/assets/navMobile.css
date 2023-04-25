@@ -1,0 +1,96 @@
+.sm_nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 40%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    border-right: 1px solid #ddd;
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.sm_nav_active {
+    left: 0;
+}
+
+.brand {
+    margin-top: 71px;
+    padding-left: 55px;
+}
+
+.nav-link-parent {
+    margin-top: 50px;
+}
+
+.nav-link-parent>li>a,
+.nav-link-child>li>a,
+.nav-link-parent>li>span {
+    display: block;
+    width: 100%;
+    padding: 10px 0px 10px 55px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    text-decoration: none;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.nav-link-parent>li>span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 44px;
+}
+
+.nav-link-parent>li>span>i {
+    transform: rotate(0deg);
+    transition: all .5s ease-in-out;
+}
+
+.nav-link-parent>li>span>.rotate_i {
+    transform: rotate(-90deg);
+}
+
+.nav-link-parent li a:hover {
+    background-color: #ddd;
+}
+
+.nav-link-child {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    height: 0px;
+}
+
+.height-toggle {
+    height: 87px;
+}
+
+.sm_cross {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    font-weight: 300;
+    font-size: 21px;
+    color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+    .sm_nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .sm_nav {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sm_nav {
+        width: 100%;
+    }
+}

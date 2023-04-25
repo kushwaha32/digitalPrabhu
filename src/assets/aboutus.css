@@ -1,0 +1,36 @@
+.specialization {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.specialization .sp_text {
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.prog_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 996px) {
+    .specialization {
+        grid-template-columns: 1fr;
+    }
+    .specialization .sp_text {
+        order: 2;
+        margin-right: 0;
+    }
+    .pro_graph {
+        order: 1;
+        margin-bottom: 36px;
+    }
+}

@@ -1,0 +1,140 @@
+.nav_top {
+    border-bottom: 1px solid #ddd;
+    background: #fcfcfc;
+    font-size: 12px;
+}
+
+.nav_contact {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    align-items: center;
+    color: gray;
+}
+
+.nav_social>li {
+    display: inline-block;
+    padding: 7px 10px;
+    border-right: 1px solid #ddd;
+}
+
+.nav_social>li:last-child {
+    border-right: none;
+}
+
+.nav_contact span {
+    margin: 0 5px;
+}
+
+
+/* navigation */
+
+.border-color {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.nav_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-icon {
+    display: none;
+    padding: 27px 0;
+    font-size: 20px;
+}
+
+.navigation {
+    list-style: none;
+    color: gray;
+    transition: all .5s ease-in-out;
+}
+
+.navigation:hover {
+    color: #333;
+}
+
+.navigation_link {
+    display: inline-block;
+    margin-right: 43px;
+    position: relative;
+    padding: 27px 0;
+    cursor: pointer;
+}
+
+.navigation_link a {
+    color: gray;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.navigation_link:hover a {
+    color: #333;
+}
+
+
+/* navigation sub  */
+
+.navigation_sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-top: 2px solid #2997ab;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    z-index: 9999;
+}
+
+.navigation_sub_active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation_sub li a {
+    display: block;
+    width: 250px;
+    padding: 12px 0 12px 24px;
+    text-transform: capitalize;
+    color: gray;
+    font-size: 13px;
+}
+
+.navigation_sub li a:hover {
+    background-color: rgb(252, 252, 252);
+    color: #333;
+}
+
+
+/* .navigation_sub li:hover a {
+    color: #333;
+} */
+
+@media only screen and (max-width: 768px) {
+    .navigation_link {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+}
+
+.rotate {
+    transition: all .5s ease-in;
+    transform: rotate(-180deg);
+}
+
+.arrow {
+    margin-left: 8px;
+    font-size: 19px;
+    position: relative;
+    top: 3px;
+    font-weight: 400;
+    color: gray;
+}
